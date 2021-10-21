@@ -1,2 +1,1 @@
-web: bin/MY-REGISTER-LOGIN-API-MAIN
-web: go run main
+web: go run main.go
