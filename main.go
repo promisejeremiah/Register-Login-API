@@ -19,7 +19,7 @@ func main() {
 	r.HandleFunc("/send", controllers.Send).Methods("POST")
 
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"https://promise-jeremiah-portfolio.herokuapp.com/"},
+		AllowedOrigins:   []string{"https://promise-jeremiah-portfolio.herokuapp.com"},
 		AllowCredentials: true,
 	})
 	handler := c.Handler(r)
