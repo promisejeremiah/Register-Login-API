@@ -134,7 +134,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 		Value:    token,
 		Expires:  time.Now().Add(time.Hour * 1),
 		HttpOnly: true,
-		Domain:   "promisejeremiah.co"
+		Domain:   "https://promisejeremiah.co",
 	}
 
 	http.SetCookie(w, &cookie)
