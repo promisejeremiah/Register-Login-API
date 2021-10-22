@@ -132,8 +132,9 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	cookie := http.Cookie{
 		Name:     "jwt",
 		Value:    token,
-		Expires:  time.Now().Add(time.Hour * 24),
+		Expires:  time.Now().Add(time.Hour * 1),
 		HttpOnly: true,
+		Domain:   "https://promisejeremiah.co"
 	}
 
 	http.SetCookie(w, &cookie)
